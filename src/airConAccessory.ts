@@ -72,10 +72,10 @@ export class NatureNemoAirConAccessory {
       this.platform.logger.debug('[%s] Same state. skip sending', this.name);
       return;
     }
-    if (value === this.platform.Characteristic.TargetHeatingCoolingState.AUTO) {
-      this.platform.logger.error('This plugin does not support auto');
-      throw new this.platform.api.hap.HapStatusError(this.platform.api.hap.HAPStatus.INVALID_VALUE_IN_REQUEST);
-    } else if (value === this.platform.Characteristic.TargetHeatingCoolingState.OFF) {
+    // if (value === this.platform.Characteristic.TargetHeatingCoolingState.AUTO) {
+    //   this.platform.logger.error('This plugin does not support auto');
+    //   throw new this.platform.api.hap.HapStatusError(this.platform.api.hap.HAPStatus.INVALID_VALUE_IN_REQUEST);
+    if (value === this.platform.Characteristic.TargetHeatingCoolingState.OFF) {
       await this.platform.natureRemoApi.setAirconPowerOff(this.id);
       this.platform.logger.info('[%s] Target Heater Cooler State <- OFF', this.name);
       this.state.targetHeatingCoolingState = value;
