@@ -6,10 +6,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neat0/homebridge-nature-remo-platform.git"
+    "url": "git+https://github.com/nathanieloon/homebridge-nature-remo-platform.git"
   },
   "bugs": {
-    "url": "https://github.com/neat0/homebridge-nature-remo-platform/issues"
+    "url": "https://github.com/nathanieloon/homebridge-nature-remo-platform/issues"
   },
   "engines": {
     "node": ">=14.18.1",
